@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit} from '@angular/core';
+import { MovieService } from './components/movies/movies.service';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  `,
+  styles: []
 })
 export class AppComponent {
-  title = 'progettoSettimana11';
+
+  constructor(){}
+
+
 }
+
+
